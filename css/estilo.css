@@ -1,2 +1,127 @@
-h1 {
-  color: blueviolet; }
+#sticky {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 99999; }
+  #sticky .logito {
+    padding-left: 20px;
+    padding-top: 6px;
+    grid-area: logito; }
+  #sticky .barraDeInicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-area: barraDeInicio; }
+    #sticky .barraDeInicio li {
+      padding: 15px;
+      list-style-type: none; }
+      #sticky .barraDeInicio li a {
+        color: #54089c;
+        transition: color 0.7s; }
+        #sticky .barraDeInicio li a a:hover {
+          color: #ded0e4; }
+
+.gridMain {
+  display: grid;
+  grid-template-areas: "imagenPc imagenPc" "lorem2 lorem" "tituloProductos tituloProductos";
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 8px;
+  grid-row-gap: 30px; }
+  .gridMain .pcgamer {
+    height: 1000px;
+    width: 1840px;
+    padding-top: 2px;
+    grid-area: imagenPc; }
+  .gridMain .lorem {
+    color: #431171;
+    grid-area: lorem;
+    font-size: x-large;
+    background-color: blueviolet; }
+  .gridMain .lorem2 {
+    grid-area: lorem2;
+    font-size: larger; }
+  .gridMain .tituloProductos {
+    grid-area: tituloProductos;
+    text-align: center; }
+
+.gridProductosYtexto {
+  display: grid;
+  grid-template-areas: "gridProductos loremProductos";
+  grid-column-gap: 30px;
+  grid-row-gap: 10px; }
+  .gridProductosYtexto .gridProductos {
+    display: grid;
+    grid-template-areas: "mother ram" "amd grafica";
+    justify-content: left;
+    grid-area: gridProductos; }
+  .gridProductosYtexto img {
+    width: 400px;
+    height: 390px;
+    background-color: blueviolet;
+    transition: background-color 0.8s; }
+  .gridProductosYtexto .mother {
+    grid-area: mother;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-bottom: 40px; }
+  .gridProductosYtexto .ram {
+    grid-area: ram;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+    padding-right: 50px; }
+  .gridProductosYtexto .grafica {
+    grid-area: grafica;
+    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 50px; }
+  .gridProductosYtexto .amd {
+    grid-area: amd;
+    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 60px; }
+  .gridProductosYtexto .loremProductos {
+    grid-area: loremProductos;
+    font-size: x-large; }
+
+.conocenosmas {
+  text-align: center;
+  background-color: blueviolet;
+  color: #ece6f1;
+  padding: 15px; }
+
+.UBICACION {
+  color: blueviolet;
+  text-align: center;
+  font-size: xx-large;
+  font-style: italic;
+  background-color: #ceb7e3; }
+
+.contacto {
+  padding-left: 750px;
+  padding-top: 15px; }
+
+.contactanos {
+  text-align: center;
+  color: blueviolet;
+  font-size: 50px; }
+
+.EncabezadoArmadopc {
+  text-align: center;
+  color: #cdbade;
+  background-color: blueviolet;
+  padding: 20px; }
+
+.video {
+  padding-left: 650px; }
+
+.linkYt {
+  text-align: center;
+  font-size: x-large;
+  color: #a14fed; }

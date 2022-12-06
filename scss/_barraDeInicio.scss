@@ -1,0 +1,30 @@
+#sticky{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    .logito{
+        padding-left: 20px;
+        padding-top: 6px;
+        grid-area: logito;
+    }
+    .barraDeInicio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-area: barraDeInicio;
+        li{
+            padding: 15px;
+            list-style-type: none;
+           a{
+            color: rgb(84, 8, 156);
+            transition: color 0.7s;
+               a:hover{
+               color: rgb(222, 208, 228);
+               }
+            }
+        }
+    }
+}
