@@ -20,8 +20,8 @@
       #sticky .barraDeInicio li a {
         color: #54089c;
         transition: color 0.7s; }
-        #sticky .barraDeInicio li a a:hover {
-          color: #ded0e4; }
+      #sticky .barraDeInicio li a:hover {
+        color: #ded0e4; }
 
 .gridMain {
   display: grid;
@@ -36,7 +36,7 @@
     padding-top: 2px;
     grid-area: imagenPc; }
   .gridMain .lorem {
-    color: #431171;
+    color: rgba(255, 255, 255, 0.701);
     grid-area: lorem;
     font-size: x-large;
     background-color: blueviolet; }
@@ -89,6 +89,13 @@
   .gridProductosYtexto .loremProductos {
     grid-area: loremProductos;
     font-size: x-large; }
+  .gridProductosYtexto img {
+    width: 400px;
+    height: 390px;
+    background-color: blueviolet;
+    transition: background-color 0.8s; }
+  .gridProductosYtexto img:hover {
+    background-color: #60209b; }
 
 .conocenosmas {
   text-align: center;

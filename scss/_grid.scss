@@ -15,10 +15,10 @@
         grid-area: imagenPc;
     }
     .lorem{
-        color: rgb(67, 17, 113);
+        color: $grisClaro;
         grid-area: lorem;
         font-size: x-large;
-        background-color: blueviolet;
+        background-color: $violeta;
     }
     .lorem2{
         grid-area: lorem2;
@@ -46,7 +46,7 @@
         img{
             width: 400px;
             height: 390px;
-            background-color: blueviolet;
+            background-color: $violeta;
             transition: background-color 0.8s;
         }
         .mother{
@@ -80,5 +80,14 @@
         .loremProductos{
             grid-area: loremProductos;
             font-size: x-large;
+        }
+        img{
+            width: 400px;
+            height: 390px;
+            background-color: $violeta;
+            transition: background-color 0.8s;
+        }
+        img:hover{
+            background-color: $violetaOscuro;
         }
 }
